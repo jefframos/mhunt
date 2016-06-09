@@ -67,7 +67,6 @@ export default class Moor extends PIXI.Container{
 			if(this.position.y > (config.height - 100) - this.radius && this.virtualVelocity.y > 0 ||
 				this.position.y < this.radius + 100 && this.virtualVelocity.y < 0){
 				this.virtualVelocity.y *= -1;
-
 			}
 		}else{
 			this.virtualVelocity.y += 0.1;
